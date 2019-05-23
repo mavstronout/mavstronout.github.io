@@ -16,6 +16,9 @@
 
  <script src="js/main.js"></script>
 
+ <!-- Google Font -->
+ <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,16 +26,16 @@
     <div class="column" id="header">
         <div class="container">
             <div class="item">
-                <a href="/">Home</a>
+                <a class="btn" href="../index.html">Home</a>
             </div>
             <div class="item">
-                <a href="#about">About</a>
+                <a href="#about" class="btn">About</a>
             </div>
             <div class="item">
-                <a href="#projects">Projects</a>
+                <a href="#projects" class="btn">Projects</a>
             </div>
             <div class="item">
-                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
             <!-- <div class="item">
                 <a href="#darktheme.css">Dark</a>
@@ -46,7 +49,8 @@
     <div class="column">
         <div class="column-item" id="about">
             <div class="col-item">
-                <img src="../assets/selfie.jpg" id="img">
+                <img src="../assets/selfie.jpg" id="img" class="left-align">
+                
                 <h1>#About</h1>
                 <p>
                     tl;dr :// I am a full stack MERN-Hyperledger web application developer, designer and computer security researcher.
@@ -67,6 +71,7 @@
                     As an entrepreneur I'm interested in the next generation of media and use cases for AI that require human-like subjective and parallel reasoning. 
                     Currently, I'm looking for web and mobile development opportunities to make your applications a reality.
                 </p>
+                <div class="separator"></div>
             </div>
         </div>
 
@@ -74,13 +79,15 @@
             <h1>#Projects and Contributions</h1>
             <div class="tile-container">
                 <div class="item">
-                    <img src="../assets/rlg-ico.png">
+                    <img src="../assets/rlg-ico.png"><br>
                     <a href="#" class="btn">more details</a> 
                     <!-- Coming soon: pop-up overlay -->
                 </div>
             </div>
+            <br>
+            <div class="separator"></div>
         </div>
-
+        
         <div class="column-item" id="contact">
             <div class="container">
                 <div class="item">
@@ -89,29 +96,26 @@
                         Email: mavbarona@gmail.com</p>
                 </div>
                 <div class="item">
-                    <form id="contact">
-                        <ul>
-                            <li>
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your Name" required="required">
-                            </li>
-                            <li>
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Your Email" required="required">
-                            </li>
-                            <li>
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" required="required"></textarea>
-                            </li>
-                        </ul>
+                    <form id="contact" action="/action_page.php">
+                        <br>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required="required">
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required="required">
+                        <br>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                        <br>
                     </form>
-                    <input type="submit">
+                    <input class="btn" type="submit">
 
                 </div>
             </div>
         </div>
 
         <div class="column-item" id="footer">
+            <div class="separator"></div>
             <div class="container">
                 <div class="item">
                     <a href="https://www.linkedin.com/in/mavrick-barona-8a183342/"><img src="../assets/linkedin-ico.jpg" id="icon"> </a>
