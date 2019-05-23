@@ -39,11 +39,11 @@
 }
 .column-item {
     order: inherit;
-    width: 90%;
+    min-width: 100px;
 }
 .item {
     order: inherit;
-    width: 90%;
+    min-width: 100px;
 }
 .tile-container {
     display: flex;
