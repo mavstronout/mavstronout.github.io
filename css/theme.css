@@ -1,16 +1,25 @@
 .btn {
-    background-color: #4CAF50; /* Green */
+    background-color: rgb(0, 145, 241); /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: font-family: 'Teko', sans-serif;
   }
 
 .btn:hover {
     background-color: darkslategrey;
+}
+.separator {
+    background-color: darkcyan;
+    height: 8px;
+    width: auto;
+}
+.left-align {
+    float: left;
 }
 
 #landing {
@@ -19,8 +28,8 @@
     display: inline-block;
 }
 .container {
-    height: 49%;
-    width: 100%;
+    height: auto;
+    width: 95%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,7 +38,7 @@
 }
 
 .column {
-    height: 100%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -40,18 +49,24 @@
 .column-item {
     order: inherit;
     min-width: 100px;
+    height: auto;
 }
 .item {
     order: inherit;
-    min-width: 100px;
+    min-width: 50px;
+    height: auto;
 }
 .tile-container {
     display: flex;
-    height: 95%;
-    width: 95%;
+    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; 
+}
+.col-item {
+    order: inherit;
+    min-width: 100px;
+    height: auto;
 }
 
 img {
@@ -69,4 +84,27 @@ img {
 
 body {
     background-color: dimgrey;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Teko', sans-serif;
+    
+}
+
+
+#header {
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    margin-bottom: 42px;
 }
