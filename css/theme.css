@@ -25,17 +25,7 @@
 .btn:hover {
     background-color: darkslategrey;
 }
-.separator {
-    background-color: darkcyan;
-    height: 8px;
-    width: auto;
-}
-.separate-foot {
-    background-color: darkcyan;
-    height: 16px;
-    width: auto;
-    padding-top: 5px;
-}
+
 .left-align {
     float: left;
 }
@@ -109,14 +99,13 @@
 img {
     height: 200px;
     width: 200px;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
 }
-#img {
-    height: 200px;
-    width: 200px;
-}
+
 #icon {
-    height: 25px;
-    width: 25px;
+    height: 42px;
+    width: 42px;
 }
 
 body {
@@ -147,6 +136,12 @@ p {
     margin-top: 15px;
     padding-top: 15px;
     margin-bottom: 42px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Teko', sans-serif;
 }
 
 /* From folio bootstrap */
