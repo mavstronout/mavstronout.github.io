@@ -30,6 +30,12 @@
     height: 8px;
     width: auto;
 }
+.separate-foot {
+    background-color: darkcyan;
+    height: 16px;
+    width: auto;
+    padding-top: 5px;
+}
 .left-align {
     float: left;
 }
@@ -142,3 +148,37 @@ p {
     padding-top: 15px;
     margin-bottom: 42px;
 }
+
+/* From folio bootstrap */
+
+li.filter-active  {
+    color: #808000;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+
+  
+nav ul li {
+    float: left;
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-left: 40px;
+  }
+  
+  nav ul li a {
+    padding: 2px 0 0 0;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    font-family: 'Poppins', helvetica;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
