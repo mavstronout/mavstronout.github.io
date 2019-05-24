@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   // ========================================================================= //
   //  Porfolio isotope and filter
+  // add jQuery to submit form, add iframe to popup overlay, add queryselector to get elementbyid and change CSS theme
   // ========================================================================= //
 
 
