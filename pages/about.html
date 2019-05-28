@@ -27,16 +27,16 @@
 
     <div class="column" id="header">
         <div class="container">
-            <div class="item">
+            <div class="nav-it">
                 <a class="btn" href="../index.html">Home</a>
             </div>
-            <div class="item">
+            <div class="nav-it">
                 <a href="#about" class="btn">About</a>
             </div>
-            <div class="item">
+            <div class="nav-it">
                 <a href="#projects" class="btn">Projects</a>
             </div>
-            <div class="item">
+            <div class="nav-it">
                 <a href="#contact" class="btn">Contact</a>
             </div>
             <!-- <div class="item">
@@ -51,7 +51,7 @@
     <div class="column">
         <div class="column-item" id="about">
             <div class="col-item">
-                <img src="../assets/selfie.jpg" class="left-align">
+                <img src="../assets/selfie.jpg" class="left-align" id="full-img">
                 
                 <h1><i class="far fa-address-card"></i> Maverick Barona</h1>
                 <p>
@@ -80,17 +80,20 @@
             <h1><i class="fas fa-project-diagram"></i> Portfolio</h1> 
             <div class="tile-container">
                 <div class="proj-item">
+                    <h1>Roclineage</h1>
                     <img src="../assets/rlg-ico.png" id="proj-img" alt="Roclin Group"><br>
-                    <a href="#" class="btn">Roclineage: Social Linked Data</a> 
+                    <a href="#" class="btn">more details</a> 
                     <!-- Coming soon: pop-up overlay, iframe overlay; change css of background to be darker or transparent*-->
                 </div>
                 <div class="proj-item">
-                        <img src="../assets/playfold-ico.jpg" id="proj-img" alt="Playfold Media"><br>
-                        <a href="#" class="btn">Playfold: Blockchain Media</a> 
+                    <h1>Playfold</h1>    
+                    <img src="../assets/playfold-ico.jpg" id="proj-img" alt="Playfold Media"><br>
+                    <a href="#" class="btn">more details</a> 
                 </div>
                 <div class="proj-item">
-                        <img src="../assets/podbot.png" id="proj-img" alt="Discord Podbot"><br>
-                        <a href="#" class="btn">Discord Bot: Podbot</a> 
+                    <h1>Podbot</h1>    
+                    <img src="../assets/podbot.png" id="proj-img" alt="Discord Podbot"><br>
+                    <a href="#" class="btn">more details</a> 
                 </div>
             </div>
         </div>
@@ -107,16 +110,34 @@
                     <div class="column">
                     <form id="contact" action="/action_page.php">
                         <div class="col-item">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required="required">
+                            <div class="container">
+                                <div class="con-it">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="con-it">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required="required">
+                                </div>
+                            </div>
                         </div>
                         <div class="col-item">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Your Email" required="required">
+                            <div class="container">
+                                <div class="con-it">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="con-it">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required="required">
+                                </div>
+                            </div>
                         </div>
                         <div class="col-item">
-                        <label for="message">Message</label><br>
-                        <textarea id="message" name="message" placeholder="optional"></textarea>
+                            <div class="container">
+                                <div class="con-it">
+                                    <label for="message">Message</label>
+                                </div>
+                                <div class="con-it">
+                                    <textarea id="message" name="message" placeholder="optional"></textarea>
+                                </div>
+                            </div>
                         </div>
                     </form>
                     <input class="btn col-item" type="submit" value="Send Message">
@@ -128,16 +149,16 @@
 
         <div class="column-item" id="footer">
             <div class="container">
-                <div class="item">
+                <div class="nav-it">
                     <a href="https://www.linkedin.com/in/mavrick-barona-8a183342/"><i class="fab fa-linkedin-in" id="icon"></i></a>
                 </div>
-                <div class="item">
+                <div class="nav-it">
                     <a href="https://angel.co/maverick-barona"><i class="fab fa-angellist" id="icon"></i></a>
                 </div>
-                <div class="item">
+                <div class="nav-it">
                     <a href="https://medium.com/@maverickbarona"><i class="fab fa-medium-m" id="icon"></i></a>
                 </div>
-                <div class="item">
+                <div class="nav-it">
                     <a href="https://twitter.com/timelinetrekker"><i class="fab fa-twitter" id="icon"></i> </a>
                 </div>
                 
