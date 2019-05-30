@@ -267,6 +267,15 @@ ul li {
     height: 70px;
 }
 
+#pup {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    position: relative;
+    display: block;
+    height: auto;
+    width: 75%;
+}
+
 /* #spinner {
     width: 100px;
     height: 100px;
