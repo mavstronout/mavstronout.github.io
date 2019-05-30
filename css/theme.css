@@ -45,6 +45,18 @@
     justify-content: center;
     align-items: baseline;
 }
+
+#lando {
+    display: inline-block;
+    order: inherit;
+    height: auto;
+    width: 60%;
+    margin-left: 1%;
+    margin-right: 1%;
+    justify-content: center;
+    align-items: baseline;
+}
+
 .container {
     height: auto;
     width: 90%;
@@ -208,7 +220,7 @@ li.filter-active  {
   }
 
   
-nav ul li {
+nav {
     float: left;
     margin-right: 15px;
     font-family: 'Poppins', sans-serif;
@@ -216,16 +228,155 @@ nav ul li {
     margin-left: 40px;
   }
   
-  nav ul li a {
+nav a {
     padding: 2px 0 0 0;
     position: relative;
     display: block;
     font-size: 14px;
     color: #666666;
-    font-family: 'Poppins', helvetica;
     font-weight: 500;
     line-height: 16px;
     text-transform: uppercase;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+#jumbo {
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+#tagline {
+    font-weight: 1000;
+    font-size: 30px;
+    overflow-x: visible;
+    font-family: 'Teko', sans-serif;
+}
+
+ul li {
+    font-weight: 1000;
+    font-size: 24px;
+    overflow-x: visible;
+    font-family: 'Teko', sans-serif;
+    list-style-image: url('../assets/pizza-slice-solid.svg');
+    margin-left: 25px;
+    padding-left: 20px;
+}
+
+.filler {
+    height: 70px;
+}
+
+/* #spinner {
+    width: 100px;
+    height: 100px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  */
+    /* transform: rotate(3deg); */
+     /* transform: rotate(0.3rad);/ */
+     /* transform: rotate(3grad); */ 
+     /* transform: rotate(.03turn);  */
+     /* display: block;
+     position: relative;
+     margin: -75px 0 0 -75px;
+     border: 3px solid #3498db;
   }
+  
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+} */
+
+.sk-folding-cube {
+margin: 20px auto;
+width: 40px;
+height: 40px;
+position: relative;
+-webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+float: left;
+width: 50%;
+height: 50%;
+position: relative;
+-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1); 
+}
+.sk-folding-cube .sk-cube:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #333;
+-webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+        animation: sk-foldCubeAngle 2.4s infinite linear both;
+-webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+-webkit-transform: scale(1.1) rotateZ(90deg);
+        transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+-webkit-transform: scale(1.1) rotateZ(180deg);
+        transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+-webkit-transform: scale(1.1) rotateZ(270deg);
+        transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+-webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+-webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s; 
+}
+.sk-folding-cube .sk-cube4:before {
+-webkit-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+} 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+} 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+} 
+}
+
+@keyframes sk-foldCubeAngle {
+0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0; 
+} 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1; 
+} 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0; 
+}
+}
