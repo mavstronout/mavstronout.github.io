@@ -258,5 +258,11 @@ ul li {
     font-size: 24px;
     overflow-x: visible;
     font-family: 'Teko', sans-serif;
-    list-style-image: url('../assets/pizza-slice-solid.svg')
+    list-style-image: url('../assets/pizza-slice-solid.svg');
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+.filler {
+    height: 70px;
 }
