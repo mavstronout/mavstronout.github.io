@@ -12,6 +12,7 @@
     margin: auto;
     background: rgb(70, 104, 140);
     border-radius: 15px;
+    cursor: pointer;
     /* --darkreader-inline-bgimage: initial;
     --darkreader-inline-bgcolor: #62615d; */
   }
@@ -22,6 +23,11 @@
     background: rgb(48, 71, 95);
     border: 2px inset;
     border-radius: 15px;
+}
+
+button:after {
+    content:'Thank you! Your message has been sent.'; 
+    visibility: visible;
 }
 
 #wide {
