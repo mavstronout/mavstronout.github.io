@@ -1,5 +1,5 @@
 .btn {
-    border: none;
+    border: 2px outset;
     color: white;
     padding: 5px 5px;
     text-align: center;
@@ -10,13 +10,24 @@
     width: 70%;
     white-space: initial;
     margin: auto;
-    background: rgb(70, 104, 140) !important;
+    background: rgb(70, 104, 140);
+    border-radius: 15px;
     /* --darkreader-inline-bgimage: initial;
     --darkreader-inline-bgcolor: #62615d; */
   }
 
 .btn:hover {
-    background-color: aquamarine;
+    font-weight: 500;
+    color: rgb(243, 243, 243);
+    background: rgb(48, 71, 95);
+    border: 2px inset;
+    border-radius: 15px;
+}
+
+#wide {
+    width: 100%;
+    margin-left: 40px;
+    overflow: visible;
 }
 
 .a:visited {
@@ -24,10 +35,6 @@
 }
 .a:hover {
     color: aquamarine;
-}
-
-.btn:hover {
-    background-color: darkslategrey;
 }
 
 .left-align {
@@ -193,7 +200,7 @@ p {
 #header {
     padding-bottom: 15px;
     margin-top: 10px;
-    margin-bottom: 15px;
+    padding-top: 15px;
 }
 
 #footer {
