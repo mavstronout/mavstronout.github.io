@@ -25,6 +25,12 @@
     border-radius: 15px;
 }
 
+#iframeDisplay {
+    margin: auto;
+    display: block;
+    font-family: 'Teko', sans-serif;
+}
+
 button:after {
     content:'Thank you! Your message has been sent.'; 
     visibility: visible;
