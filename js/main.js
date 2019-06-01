@@ -20,5 +20,17 @@ $(document).ready(function() {
 
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
+
+  let page = "";
   
+  function openFrame(page) {
+    document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"../pages/pup/${page}.html\" height=\"200\" width=\"300\" ></iframe>";
+
+}
+
+  
+  // $('#projects button').on( 'click', function displayIframe(page) {
+  // document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"../pages/pup/${page}.html\" height=\"200\" width=\"300\" ></iframe>";
+
+
 });
