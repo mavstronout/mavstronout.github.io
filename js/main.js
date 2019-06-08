@@ -1,7 +1,8 @@
-/*global $, jQuery, alert*/
-$(document).ready(function() {
 
-    'use strict';
+/*global $, jQuery, alert*/
+// $(document).ready(function() {
+
+//     'use strict';
 
   // ========================================================================= //
   //  Porfolio isotope and filter
@@ -9,28 +10,64 @@ $(document).ready(function() {
   // ========================================================================= //
 
 
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-thumbnail',
-    layoutMode: 'fitRows'
-  });
+  // var portfolioIsotope = $('.portfolio-container').isotope({
+  //   itemSelector: '.portfolio-thumbnail',
+  //   layoutMode: 'fitRows'
+  // });
 
-  $('#portfolio-flters li').on( 'click', function() {
-    $("#portfolio-flters li").removeClass('filter-active');
-    $(this).addClass('filter-active');
+  // $('#portfolio-flters li').on( 'click', function() {
+  //   $("#portfolio-flters li").removeClass('filter-active');
+  //   $(this).addClass('filter-active');
 
-    portfolioIsotope.isotope({ filter: $(this).data('filter') });
-  });
+  //   portfolioIsotope.isotope({ filter: $(this).data('filter') });
+  // });
 
-  let page = "";
+  // let page = "";
   
-  function openFrame(page) {
-    document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"../pages/pup/${page}.html\" height=\"200\" width=\"300\" ></iframe>";
+//   function openFrame(page) {
+//     document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"../pages/pup/${page}.html\" height=\"200\" width=\"300\" ></iframe>";
 
-}
+// }
 
   
+document.onkeypress = function() {
+    document.getElementById('lakota').classList.add('is-visible');
+    document.getElementById('overlay').classList.add('is-visible');
+  }  
+  document.onkeyup = function() {
+    document.getElementById('lakota').classList.remove('is-visible');
+    document.getElementById('overlay').classList.remove('is-visible');
+    
+  }
+
+  document.onload = function() {
+
   // $('#projects button').on( 'click', function displayIframe(page) {
   // document.getElementById("iframeDisplay").innerHTML = "<iframe src=\"../pages/pup/${page}.html\" height=\"200\" width=\"300\" ></iframe>";
 
 
-});
+  // adding the modal?
+  document.getElementById('btn-modal').addEventListener('click', function() {
+    console.log('clicked b1');
+    document.getElementById('overlay').classList.add('is-visible');
+    // add if/else statements; change modal to the number. 
+    document.getElementById('modal').classList.add('is-visible');
+  });
+};
+  
+document.onload = function() {
+  document.getElementById('close-btn').addEventListener('click', function() {
+    document.getElementById('overlay').classList.remove('is-visible');
+    document.getElementById('modal').classList.remove('is-visible');
+  });
+};
+
+document.onload = function() {
+  document.getElementById('overlay').addEventListener('click', function() {
+    document.getElementById('overlay').classList.remove('is-visible');
+    document.getElementById('modal').classList.remove('is-visible');
+  });
+};
+  
+
+// });
