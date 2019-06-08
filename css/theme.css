@@ -100,7 +100,7 @@
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   }
-
+/* 
 .modal {
     pointer-events: none;
     opacity: 0;
@@ -115,7 +115,7 @@
     background: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  }
+  } */
   .modal-close-btn {
     position: absolute;
     right: 10px;
@@ -287,6 +287,16 @@
     max-width: 116px;
     height: auto;
 }
+
+
+#pro-img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .tile-container {
     display: flex;
     height: auto;
