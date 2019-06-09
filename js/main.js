@@ -2,6 +2,11 @@
 /*global $, jQuery, alert*/
 // $(document).ready(function() {
 
+  $('#pod-img-1').modal({
+    closeExisting: false
+  });
+
+  
 //     'use strict';
 
   // ========================================================================= //
