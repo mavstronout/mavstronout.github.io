@@ -2,9 +2,7 @@
 /*global $, jQuery, alert*/
 // $(document).ready(function() {
 
-  $('#pod-img-1').modal({
-    closeExisting: false
-  });
+
 
   
 //     'use strict';
@@ -35,15 +33,7 @@
 // }
 
   
-document.onkeypress = function() {
-    document.getElementById('lakota').classList.add('is-visible');
-    document.getElementById('overlay').classList.add('is-visible');
-  }  
-  document.onkeyup = function() {
-    document.getElementById('lakota').classList.remove('is-visible');
-    document.getElementById('overlay').classList.remove('is-visible');
-    
-  }
+
 
   // document.onload = function() {
 
