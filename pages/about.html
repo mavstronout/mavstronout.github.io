@@ -14,25 +14,442 @@
  <link rel = "stylesheet" type = "text/css" href = "../css/theme.css" />
  <link rel = "stylesheet" type = "text/css" href = "../css/darktheme.css" />
 
- <script src="js/main.js"></script>
+
+ <script src="../js/main.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+ 
+ <!-- Google Font -->
+ <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 </head>
 
 <body>
+        <!-- <div id="pod-img-1" class="modal">
+                <img src="../assets/podboy-1.png"><br>
+                <a href="#ex3" class="btn" rel="modal:close">Close</a>
+              </div> -->
+              
+
+        <div id="ex1" class="modal">
+                
+                        <div class="column-m">
+                            <div class="col-item-m">
+                                <div class="container">
+                                    <div class="item">
+                                        <h1>Roclineage: Social Linked Data for Passive Income</h1>
+                                        <p class="details">The Roclineage collaboration is geared towards innovative business solutions to reclaim data rights to earn tokens for our contributions online.<br> 
+                                            As a decentralized and eclectic group of technical, media and economic minds we are involved in our communities to debate, understand and create solutions.<br>
+                                            Our milestones in-progress include use of Hyperledger DLT technology as a proof-of-concept for voting, community and online trust; tokenomic systems to reward trust, provide welfare, connect others and reward community contributions for their data.<br>
+                                            Our method isn't geared to individuals exclusively, but rather influential and benefit the network effect using data driven methodology.    
+                                        </p>
+                                    </div>
+                                    <div class="item">
+                                        <img src="../assets/rlg-ico.png" id="pro-img" class="logicon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-item-m">
+                                <h1>Info</h1>
+                                <ul id="lst">
+                                    <li>Project page: <a href="https://discord.gg/SKU9jbD">Coming soon</a></li>
+                                    <li>Discord Group: <a href="https://discord.gg/SKU9jbD">Invite Link</a></li>
+                                    <li>Company page: <a href="http://www.roclineage.com/">Web page</a></li>
+                                    <li>Home Page Source: <a href="https://github.com/mavstronaut/mavstronaut.github.io">Web page Source</a></li>
+                                    <li>Years active: Jan 2017 - Present</li>
+                                    <li>Contributors: mavstronaut</li>
+                                </ul>
+                            </div>
+                            <div class="col-item-m">
+                                <h1>Media</h1>
+                                <div class="carousel-cont">
+                                    <!-- Create this css class -->
+                                    <div class="car-item">
+                                        <img src="../assets/rlg-site-1.jpg" alt="typewriter-text-js" id="proj-img" class="logicon">
+                                    </div>
+                                    <div class="car-item">
+                                        <img src="../assets/rlg-site-2.png" alt="carousel" id="proj-img" class="logicon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-item-m">
+                                <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                            </div>
+                        <a href="#" class="btn" rel="modal:close">Close</a>
+                        </div>
+        </div>
+
+        <div id="ex2" class="modal">
+                
+                <div class="column-m">
+                    <div class="col-item-m">
+                        <div class="container">
+                            <div class="item">
+                                <h1>Playfold: Decentralize Creativity</h1>
+                                <p class="details">Playfold is a blockchain media company aimed to shift the way we connect and share on social media.<br> 
+                                    Join our discord for more details for ways to participate.</p>
+                            </div>
+                            <div class="item">
+                                <img src="../assets/playfold-ico.jpg" id="pro-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Info</h1>
+                        <ul id="lst">
+                            <li>Project page: <a href="#">Activities Coming Soon</a></li>
+                            <li>Discord Group: <a href="https://discord.gg/NBD4HJB">Invite Link</a></li>
+                            <li>Company page: <a href="http://www.playfold.io">New Page Under Construction</a></li>
+                            <li>Years active: March 2018 - Present</li>
+                            <li>Technical Design: mavstronaut</li>
+                        </ul>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Media</h1>
+                        <div class="carousel-cont">
+                            <!-- Create this css class -->
+                            <div class="car-item">
+                                    <a href="#pod-img-1" rel="modal:open"><img src="../assets/activity-1.png" alt="Playfold Activities" id="pro-img" class="logicon"></a>
+                            </div>
+                            <div class="car-item">
+                                <img src="../assets/activity-2.png" alt="Profiles" id="proj-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                    </div>
+                  <a href="#" class="btn" rel="modal:close">Close</a>
+                </div>
+        </div>
+
+        <div id="ex3" class="modal">
+                
+                <div class="column-m">
+                    <div class="col-item-m">
+                        <div class="container">
+                            <div class="item">
+                                <h1>Podbot: Discord Bot</h1>
+                                <p class="details">Podbot is a streaming integration and management app built for Discord.<br> Join our discord for more details for ways to participate.</p>
+                            </div>
+                            <div class="item">
+                                <img src="../assets/podbot.png" id="pro-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Info</h1>
+                        <ul id="lst">
+                            <li>Project page: <a href="#">Coming Soon!</a></li>
+                            <li>Company page: <a href="#">Under Development</a></li>
+                            <li>Project Source Preview: <a href="https://github.com/mavstronout/TriviaGame">Trivia Game Preview</a></li>
+                            <li>Years active: Jan 2019 - Present</li>
+                            <li>Contributors: mavstronaut</li>
+                        </ul>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Media</h1>
+                        <div class="carousel-cont">
+                            <!-- Create this css class -->
+                            <div class="car-item">
+                                <img src="../assets/podboy-1.png" alt="Stream-integreated-games" id="proj-img" class="logicon">
+                            </div>
+                            <div class="car-item">
+                                <img src="../assets/podboy-2.png" alt="award-players-per-server" id="proj-img" class="logicon">
+                            </div>
+                            <div class="car-item">
+                                <img src="../assets/podboy-3.png" alt="discover-new-art" id="proj-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                    </div>
+                    
+                  <a href="#" class="btn" rel="modal:close">Close</a>
+                </div>
+        
+
+        </div>
+
+        <div id="ex4" class="modal">
+                
+            <div class="column-m">
+                <div class="col-item-m">
+                    <div class="container">
+                        <div class="item">
+                            <h1>Game of Words</h1>
+                            <p class="details">A game of hangman featuring the cast of dead characters who failed to live to see the decline of the final season of Game of Thrones.<br> This game features a midi file of the theme, multiple levels of difficulty and 15 chances to win.</p>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/bg-throne.jpg" id="pro-img" class="logicon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item-m">
+                    <h1>Info</h1>
+                    <ul id="lst">
+                        <li>Project page: <a href="http://www.roclineage.com/game-of-words">Play Now</a></li>
+                        <li>Project Source: <a href="https://github.com/mavstronaut/game-of-words">Code</a></li>
+                        <li>Launch Date: Summer 2019</li>
+                        <li>Contributors: mavstronaut</li>
+                    </ul>
+                </div>
+                <div class="col-item-m">
+                    <h1>Media</h1>
+                    <div class="carousel-cont">
+                        <!-- Create this css class -->
+                        <div class="car-item">
+                            <img src="../assets/gow-1.jpg" alt="award-players-per-server" id="proj-img" class="logicon">
+                        </div>
+                        <div class="car-item">
+                            <img src="../assets/gow-2.jpg" alt="award-players-per-server" id="proj-img" class="logicon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item-m">
+                    <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                </div>
+                
+              <a href="#" class="btn" rel="modal:close">Close</a>
+            </div>
+        </div>
+    
+
+            <div id="ex5" class="modal">
+                
+                <div class="column-m">
+                    <div class="col-item-m">
+                        <div class="container">
+                            <div class="item">
+                                <h1>Rick and Morty Schwifty Collector</h1>
+                                <p class="details">Oh man. Rick is totally at it again. He's up got some mega seeds and rare plumbus for you to grab.<br> He's up to no good though, shuffling things around on you. Changing the value of seeds, because, you know the economy. Have fun!</p>
+                            </div>
+                            <div class="item">
+                                <img src="../assets/schwifty.jpg" id="pro-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Info</h1>
+                        <ul id="lst">
+                            <li>Project page: <a href="https://mavstronout.github.io/getSchwifty/">Play Now</a></li>
+                            <li>Project Source: <a href="https://github.com/mavstronout/getSchwifty">Code</a></li>
+                            <li>Launch Date: Summer 2019</li>
+                            <li>Contributors: mavstronaut</li>
+                        </ul>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Media</h1>
+                        <div class="carousel-cont">
+                            <!-- Create this css class -->
+                            <div class="car-item">
+                                <img src="../assets/get-schwifty.png" alt="Mr. Poopybutthole was here" id="proj-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                    </div>
+                    
+                  <a href="#" class="btn" rel="modal:close">Close</a>
+                </div>
+            </div>
+
+
+            <div id="ex6" class="modal">
+                
+                <div class="column-m">
+                    <div class="col-item-m">
+                        <div class="container">
+                            <div class="item">
+                                <h1>Giphy API Lab</h1>
+                                <p class="details">This project makes a request to the giphy api to grab some giphs of your choosing and throw them onto the page.</p>
+                            </div>
+                            <div class="item">
+                                <img src="../assets/giphy.gif" id="pro-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Info</h1>
+                        <ul id="lst">
+                            <li>Project page: <a href="http://www.roclineage.com/giphyLab/">Play Now</a></li>
+                            <li>Project Source: <a href="https://github.com/mavstronaut/giphyLab">Code</a></li>
+                            <li>Launch Date: Summer 2019</li>
+                            <li>Contributors: mavstronaut</li>
+                        </ul>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Media</h1>
+                        <div class="carousel-cont">
+                            <!-- Create this css class -->
+                            <div class="car-item">
+                                <img src="../assets/giphyex.PNG" alt="Giphtastic" id="proj-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                    </div>
+                    
+                  <a href="#" class="btn" rel="modal:close">Close</a>
+                </div>
+            </div>
+
+            
+
+            <div id="ex7" class="modal">
+                
+                <div class="column-m">
+                    <div class="col-item-m">
+                        <div class="container">
+                            <div class="item">
+                                <h1>Train Scheduling Web App</h1>
+                                <p class="details">This project links to firebase and uses local storage to add, update and calculate the next trains arriving.</p>
+                            </div>
+                            <div class="item">
+                                <img src="../assets/train-sched.png" id="pro-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Info</h1>
+                        <ul id="lst">
+                            <li>Project page: <a href="http://www.roclineage.com/train-schedule/">Play Now</a></li>
+                            <li>Project Source: <a href="https://github.com/mavstronaut/train-schedule">Code</a></li>
+                            <li>Launch Date: Summer 2019</li>
+                            <li>Contributors: mavstronaut</li>
+                        </ul>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Media</h1>
+                        <div class="carousel-cont">
+                            <!-- Create this css class -->
+                            <div class="car-item">
+                                <img src="../assets/train-sched.png" alt="Trains" id="proj-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                    </div>
+                    
+                  <a href="#" class="btn" rel="modal:close">Close</a>
+                </div>
+            </div>
+
+            <div id="ex8" class="modal">
+                
+                <div class="column-m">
+                    <div class="col-item-m">
+                        <div class="container">
+                            <div class="item">
+                                <h1>Meme Generator</h1>
+                                <p class="details">The Meme Generator searches pixabay API and sends the data to a different page. This runs serverless without any errors to share data across different pages.<br> That image is then overlaid with text using the Chuck Norris API. Alternatively, it's possible to upload and download images to the individuals machine.</p>
+                            </div>
+                            <div class="item">
+                                <img src="../assets/meme-gen-1.jpg" id="pro-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Info</h1>
+                        <ul id="lst">
+                            <li>Project page: <a href="https://mavstronout.github.io/meme-generator/">Play Now</a></li>
+                            <li>Project Source: <a href="https://github.com/mavstronout/meme-generator">Code</a></li>
+                            <li>Launch Date: Summer 2019</li>
+                            <li>Contributors: mavstronaut</li>
+                        </ul>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Media</h1>
+                        <div class="carousel-cont">
+                            <!-- Create this css class -->
+                            <div class="car-item">
+                                <img src="../assets/meme-gen-2.png" alt="Text Overlay" id="proj-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                    </div>
+                    
+                  <a href="#" class="btn" rel="modal:close">Close</a>
+                </div>
+            </div>
+
+            <div id="ex9" class="modal">
+                
+                <div class="column-m">
+                    <div class="col-item-m">
+                        <div class="container">
+                            <div class="item">
+                                <h1>Search Bot "LIRI"</h1>
+                                <p class="details">Liri bot is a handy tool built on Node.js to query multiple API to retrieve information that may be found useful to you. Currently, Liri supports APIs to access concert lineup information from Bandsintown, song information from Spotify and movie information from OMDB. <br>Currently Liri is offline, however can be built from the repository in your local environment.<br> Features may soon be incorporated with Podboy, your favorite up and coming Discord bot!
+                            <div class="item">
+                                <img src="../assets/liri1.png" id="pro-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Info</h1>
+                        <ul id="lst">
+                            <li>Project Source: <a href="https://github.com/mavstronaut/LIRI-bot">Code</a></li>
+                            <li>Launch Date: Summer 2019</li>
+                            <li>Contributors: mavstronaut</li>
+                        </ul>
+                    </div>
+                    <div class="col-item-m">
+                        <h1>Media</h1>
+                        <div class="carousel-cont">
+                            <!-- Create this css class -->
+                            <div class="car-item">
+                                <img src="../assets/liri2.png" alt="Text Overlay" id="proj-img" class="logicon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-item-m">
+                        <p class="details">Interested in discussing this or a similar project? mavbarona@gmail.com</p>
+                    </div>
+                    
+                  <a href="#" class="btn" rel="modal:close">Close</a>
+                </div>
+            </div>
+        </div>
+
+<!-- 
+        <div class="modal" id="modal">
+                <button class="modal-close-btn" id="close-btn"><i class="fa fa-times" title="roclin"></i></button>
+                Add html and text for the modal frames here;
+        </div> -->
+        <div class="lakota" id="lakota">
+                <h1>More exceptionally, this is Lakota</h1>
+                <img src="../assets/lakota.jpeg">
+        </div>
+<!--         
+        <div class="overlay" id="overlay"></div> -->
+        <div class="overlay" id="overlay-2"></div>
+        
 
     <div class="column" id="header">
         <div class="container">
-            <div class="item">
-                <a href="/">Home</a>
+            <div class="nav-it">
+                <a class="btn" href="../index.html">Home</a>
             </div>
-            <div class="item">
-                <a href="#about">About</a>
+            <div class="nav-it">
+                <a href="#about" class="btn">About</a>
             </div>
-            <div class="item">
-                <a href="#projects">Projects</a>
+            <div class="nav-it">
+                <a href="#projects" class="btn">Projects</a>
             </div>
-            <div class="item">
-                <a href="#contact">Contact</a>
+            <div class="nav-it">
+                <a href="#contact" class="btn">Contact</a>
             </div>
             <!-- <div class="item">
                 <a href="#darktheme.css">Dark</a>
@@ -44,24 +461,25 @@
     </div>
 
     <div class="column">
-        <div class="column-item" id="about">
+        <div class="column-item" id="about" name="about">
             <div class="col-item">
-                <img src="../assets/selfie.jpg" id="img">
-                <h1>#About</h1>
+                <img src="../assets/selfie.jpg" class="left-align" id="full-img">
+                
+                <h1><i class="far fa-address-card"></i> Maverick Barona</h1>
                 <p>
                     tl;dr :// I am a full stack MERN-Hyperledger web application developer, designer and computer security researcher.
                 </p>
-                <h1>#Education</h1>
+                <h1><i class="fas fa-book-open"></i> Education</h1>
                 <p>
                     My professional background began as an Exercise Physiologist studying Applied Kinesiology and the neural networks of the mind. 
                     Following graduation this had turned my interest to better applying this understanding toward the neural networks of machine learning. 
                     Since then I've been researching crypto, security, and better web design. This has led me to join a handful of blockchain projects and the Full-Stack Flex Bootcamp @ Rutgers University.
                 </p>
-                <h1>#Languages</h1>
+                <h1><i class="fab fa-js-square"></i> Languages</h1>
                 <p>
                     Flexible learner depending on the skillset and complexity of the project, with experience across technologies such as: Java, JS, React, MongoDB, SQL, POSTGREsql, Python, PHP, Perl, C/C#, HTML/CSS 
                 </p>
-                <h1>#Projects that are a good fit</h1>
+                <h1><i class="fas fa-tasks"></i> Projects that are a good fit</h1>
                 <p>
                     I have a passion for understanding data visualization, idea flow and business models that drive behavioural incentive networks that drive trust in blockchain products. 
                     As an entrepreneur I'm interested in the next generation of media and use cases for AI that require human-like subjective and parallel reasoning. 
@@ -70,45 +488,173 @@
             </div>
         </div>
 
-        <div class="column-item" id="projects">
+        <div class="column-item" id="projects" name="projects">
+            <h1><i class="fas fa-project-diagram"></i> Portfolio</h1> 
             <div class="tile-container">
-                <div class="item">
-                    <img src="../assets/rlg-ico.png">
-                    <a href="#" class="btn">more details</a> 
-                    <!-- Coming soon: pop-up overlay -->
+                <div class="proj-item">
+                    <h1>Roclineage</h1>
+                    <img src="../assets/rlg-ico.png" id="proj-img" alt="Roclin Group"><br>
+                    <!-- <button class="btn-modal" id="btn-modal">more details</a>  -->
+                    
+                    <a href="#ex1" class="btn" rel="modal:open">more details</a>
+                    
+                </div>
+                <div class="proj-item">
+                    <h1>Playfold</h1>    
+                    <img src="../assets/playfold-ico.jpg" id="proj-img" alt="Playfold Media"><br>
+                    <!-- <button class="btn-modal2" id="btn-modal2">more details</a>  -->
+                        <a href="#ex2" class="btn" rel="modal:open">more details</a>    
+                </div>
+                <div class="proj-item">
+                    <h1>Podbot</h1>    
+                    <img src="../assets/podbot.png" id="proj-img" alt="Discord Podbot"><br>
+                    <!-- <button class="btn-modal3" id="btn-modal3">more details</a>  -->
+                        <a href="#ex3" class="btn" rel="modal:open">more details</a>    
+                </div>
+
+                <div class="proj-item">
+                    <h1>Game of Words</h1>    
+                    <img src="../assets/bg-throne.jpg" id="proj-img" alt="Game of Words"><br>
+                    <!-- <button class="btn-modal3" id="btn-modal3">more details</a>  -->
+                        <a href="#ex4" class="btn" rel="modal:open">more details</a>    
+                </div>
+
+                <div class="proj-item">
+                    <h1>Schwifty Collector</h1>    
+                    <img src="../assets/schwifty.jpg" id="proj-img" alt="Schwiftyyyy"><br>
+                    <!-- <button class="btn-modal3" id="btn-modal3">more details</a>  -->
+                        <a href="#ex5" class="btn" rel="modal:open">more details</a>    
+                </div>
+
+                <div class="proj-item">
+                    <h1>Giphy API</h1>    
+                    <img src="../assets/giphy.gif" id="proj-img" alt="giphy-api"><br>
+                    <!-- <button class="btn-modal3" id="btn-modal3">more details</a>  -->
+                        <a href="#ex6" class="btn" rel="modal:open">more details</a>    
+                </div>
+
+                <div class="proj-item">
+                    <h1>Train Schedule</h1>    
+                    <img src="../assets/train-sched.png" id="proj-img" alt="Train-scheduler"><br>
+                    <!-- <button class="btn-modal3" id="btn-modal3">more details</a>  -->
+                        <a href="#ex7" class="btn" rel="modal:open">more details</a>    
+                </div>
+
+                <div class="proj-item">
+                    <h1>Meme Generator</h1>    
+                    <img src="../assets/meme-gen-1.jpg" id="proj-img" alt="Text Overlay Generator"><br>
+                    <!-- <button class="btn-modal3" id="btn-modal3">more details</a>  -->
+                        <a href="#ex8" class="btn" rel="modal:open">more details</a>    
+                </div>
+
+                <div class="proj-item">
+                    <h1>Liri Bot</h1>    
+                    <img src="../assets/liri2.png" id="proj-img" alt="Text Overlay Generator"><br>
+                    <!-- <button class="btn-modal3" id="btn-modal3">more details</a>  -->
+                        <a href="#ex9" class="btn" rel="modal:open">more details</a>    
                 </div>
             </div>
         </div>
 
-        <div class="column-item" id="contact">
+
+        
+        <div class="column-item" id="contact" name="contact">
+            <div class="filler"></div>
             <div class="container">
                 <div class="item">
-                    <h1>#Contact</h1>
-                    <p>Github: mavstronaut<br>
-                        Email: mavbarona@gmail.com</p>
+                    <h1><i class="fas fa-mail-bulk"></i> Contact</h1>
+                    <p><a href="https://github.com/mavstronaut"><i class="fab fa-github"></i> <strong>Github:</strong>  mavstronaut</a> <br>
+                        <i class="fas fa-envelope-open-text"></i> <strong>Email:</strong> mavbarona@gmail.com</p>
+                    <br>
+                    <div class="container">
+                            <div class="nav-it">
+                                <a href="https://www.linkedin.com/in/mavrick-barona-8a183342/"><i class="fab fa-linkedin-in" id="icon"></i></a>
+                            </div>
+                            <div class="nav-it">
+                                <a href="https://angel.co/maverick-barona"><i class="fab fa-angellist" id="icon"></i></a>
+                            </div>
+                            <div class="nav-it">
+                                <a href="https://medium.com/@maverickbarona"><i class="fab fa-medium-m" id="icon"></i></a>
+                            </div>
+                            <div class="nav-it">
+                                <a href="https://twitter.com/timelinetrekker"><i class="fab fa-twitter" id="icon"></i> </a>
+                            </div>
+                            
+                        </div>
                 </div>
                 <div class="item">
-                    <h1>Form Embed</h1>
-                    <p>Coming soon</p>
+                    <h1><i class="far fa-paper-plane"></i> Direct Message</h1>
+                    <div class="column">
+                    <form id="contact" action="https://formspree.io/saymetamail@gmail.com" method="POST">
+                        <div class="col-item">
+                            <div class="container">
+                                <div class="con-it">
+                                    <label for="name">Name</label>
+                                </div>
+                                <div class="con-it">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-item">
+                            <div class="container">
+                                <div class="con-it">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="con-it">
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-item">
+                            <div class="container">
+                                <div class="con-it">
+                                    <label for="message">Message</label>
+                                </div>
+                                <div class="con-it">
+                                    <textarea id="message" name="message" placeholder="optional"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    <input class="btn col-item" id="wide" name="submit" type="submit" value="Send Message">
+                </form>
+                </div>
+
                 </div>
             </div>
         </div>
 
         <div class="column-item" id="footer">
+            
             <div class="container">
                 <div class="item">
-                    <a href="https://www.linkedin.com/in/mavrick-barona-8a183342/"><img src="../assets/linkedin-ico.jpg" id="icon"> </a>
-                </div>
-                <div class="item">
-                    <a href="https://angel.co/maverick-barona"><img src="../assets/angel-ico.png" id="icon"></a>
-                </div>
-                <div class="item">
-                    <a href="https://medium.com/@maverickbarona"><img src="../assets/medium-ico.png" id="icon"> </a>
-                </div>
-                <div class="item">
-                    <a href="https://twitter.com/timelinetrekker"><img src="../assets/twitter-ico.png" id="icon"></a>
+                    <div class="filler"></div>
+                    Copyright &copy;2019 Mavrick Barona
+                    <div class="filler"></div>
                 </div>
             </div>
         </div>
 </div>
+
+<script>
+    $('#pod-img-1').modal({
+    closeExisting: false
+  });
+
+//   var pupper = $('#lakota');
+//   var overlay = $('#overlay');
+
+//   function lakota() {
+//     pupper.style.add('is-visible');
+//     overlay.style.add('is-visible');
+//   }  
+
+//   document.onkeypress = lakota()
+//   document.onkeyup = function() {
+//     document.getElementById('lakota').style.remove('is-visible');
+//     document.getElementById('overlay').style.remove('is-visible');
+    
+  
+</script>
+
 </body>
