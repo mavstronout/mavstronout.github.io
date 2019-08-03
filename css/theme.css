@@ -1,5 +1,5 @@
 .btn {
-    border: 2px outset;
+    border: 0.5px outset;
     color: white;
     padding: 5px 5px;
     text-align: center;
@@ -7,7 +7,7 @@
     display: inline-block;
     font-size: 16px;
     font-family: 'Teko', sans-serif;
-    width: 70%;
+    width: 90%;
     white-space: initial;
     margin: auto;
     background: rgb(70, 104, 140);
@@ -16,17 +16,42 @@
     /* --darkreader-inline-bgimage: initial;
     --darkreader-inline-bgcolor: #62615d; */
   }
+  .btn-m {
+    border: 0.5px outset;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Teko', sans-serif;
+    width: 90%;
+    white-space: initial;
+    margin: auto;
+    background: rgb(199, 192, 176);
+    border-radius: 15px;
+    cursor: pointer;
+    /* --darkreader-inline-bgimage: initial;
+    --darkreader-inline-bgcolor: #62615d; */
+  }
+  .btn-m:hover {
+    font-weight: 500;
+    color: rgb(243, 243, 243);
+    background: rgb(48, 71, 95);
+    border: 0.5px inset;
+    border-radius: 15px;
+}
 
 .btn:hover {
     font-weight: 500;
     color: rgb(243, 243, 243);
     background: rgb(48, 71, 95);
-    border: 2px inset;
+    border: 0.5px inset;
     border-radius: 15px;
 }
 
 .btn-modal {
-    border: 2px outset;
+    border: 0.5px outset;
     color: white;
     padding: 5px 5px;
     text-align: center;
@@ -43,6 +68,7 @@
     /* --darkreader-inline-bgimage: initial;
     --darkreader-inline-bgcolor: #62615d; */
   }
+
 
 .btn-modal:hover {
     font-weight: 500;
@@ -80,7 +106,6 @@
     max-width: 300px;
     margin: 0 auto;
     padding: 30px;
-    background: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   }
@@ -96,26 +121,22 @@
     max-width: 420px;
     margin: 0 auto;
     padding: 30px;
-    background: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   }
-/* 
+
 .modal {
-    pointer-events: none;
-    opacity: 0;
+    background-color: dimgrey;
+    background: dimgrey;
+    min-width: 77%;
+    width: 97%;
     transition: opacity 0.3s;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    max-width: 300px;
     margin: 0 auto;
-    padding: 30px;
-    background: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  } */
+  }
+
+
   .modal-close-btn {
     position: absolute;
     right: 10px;
@@ -204,6 +225,7 @@
 }
 
 .container {
+    background-color: 
     height: auto;
     width: 90%;
     display: flex;
@@ -211,12 +233,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(230, 224, 211);
     max-width: 930px;
     margin: auto;
 }
 
 .carousel-cont {
+    min-height:  300px;
     height: auto;
     width: 100%;
     display: flex;
@@ -224,7 +246,6 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(230, 224, 211);
     max-width: 930px;
     margin: auto;
 }
@@ -276,7 +297,9 @@
     order: inherit;
     min-width: 260px;
     height: auto;
-    width: 20%;
+    min-width: 42%;
+    width: 48%;
+    max-width: 64%;
     margin-left: 1%;
     margin-right: 1%;
     justify-content: center;
@@ -325,16 +348,24 @@
 .proj-item {
     order: inherit;
     min-width: 120px;
-    width: 18%;
+    width: 31%;
     height: auto;
     margin-left: 1%;
     margin-right: 1%;
 }
 #proj-img {
-    max-width: 116px;
+    max-width: 95%;
+    min-width: 94%;
     height: auto;
+    max-height: 200px;
 }
 
+.logicon {
+    min-width: 250px;
+    max-width: auto;
+    height: auto;
+    min-height: 200px;
+}
 
 #pro-img {
     max-width: 200px;
