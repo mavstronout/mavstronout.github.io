@@ -589,8 +589,16 @@
 
         <div class="column-item" id="projects" name="projects">
             <h1><i class="fas fa-project-diagram"></i> Portfolio</h1> 
+            <div id="myBtnContainer">
+                <button class="btn-f active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn-f" onclick="filterSelection('node')"> Node</button>
+                <button class="btn-f" onclick="filterSelection('webapp')"> Web Apps</button>
+                <button class="btn-f" onclick="filterSelection('bots')"> Bots</button>
+                <button class="btn-f" onclick="filterSelection('games')"> Games</button>
+                <button class="btn-f" onclick="filterSelection('api')"> API</button>
+            </div>
             <div class="tile-container">
-                <div class="proj-item">
+                <div class="proj-item filterDiv webapp">
                     <h1>Roclineage</h1>
                     <a href="#ex1" class="btn-m" rel="modal:open">
                     <img src="../assets/rlg-ico.png" id="proj-img" alt="Roclin Group"><br>
@@ -598,7 +606,7 @@
                     more details</a>
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv webapp node">
                     <h1>Playfold</h1>    
                     <a href="#ex2" class="btn-m" rel="modal:open">
                     <img src="../assets/playfold-ico.jpg" id="proj-img" alt="Playfold Media"><br>
@@ -606,7 +614,7 @@
                         more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv bots api node">
                     <h1>Podbot</h1>   
                     <a href="#ex3" class="btn-m" rel="modal:open"> 
                     <img src="../assets/podbot.png" id="proj-img" alt="Discord Podbot"><br>
@@ -614,7 +622,7 @@
                         more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv games">
                     <h1>Game of Words</h1>   
                     <a href="#ex4" class="btn-m" rel="modal:open"> 
                     <img src="../assets/bg-throne.jpg" id="proj-img" alt="Game of Words"><br>
@@ -622,7 +630,7 @@
                         more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv games">
                     <h1>Schwifty Collector</h1>    
                     <a href="#ex5" class="btn-m" rel="modal:open">
                     <img src="../assets/schwifty.jpg" id="proj-img" alt="Schwiftyyyy"><br>
@@ -630,7 +638,7 @@
                         more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv api">
                     <h1>Giphy API</h1>    
                     <a href="#ex6" class="btn-m" rel="modal:open">
                     <img src="../assets/giphyex.png" id="proj-img" alt="giphy-api"><br>
@@ -638,7 +646,7 @@
                         more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv api">
                     <h1>Train Schedule</h1>  
                     <a href="#ex7" class="btn-m" rel="modal:open">
                     <img src="../assets/train-sched.png" id="proj-img" alt="Train-scheduler"><br>
@@ -646,7 +654,7 @@
                        more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv api">
                     <h1>Meme Generator</h1> 
                     <a href="#ex8" class="btn-m" rel="modal:open">   
                     <img src="../assets/meme-gen-1.jpg" id="proj-img" alt="Text Overlay Generator"><br>
@@ -654,7 +662,7 @@
                         more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item api filterDiv bots node">
                     <h1>Liri Bot</h1>    
                     <a href="#ex9" class="btn-m" rel="modal:open">
                     <img src="../assets/liri2.png" id="proj-img" alt="Text Overlay Generator"><br>
@@ -662,7 +670,7 @@
                         more details</a>    
                 </div>
 
-                <div class="proj-item">
+                <div class="proj-item filterDiv games node">
                     <h1>CLI Word Guess</h1>    
                     <a href="#ex10" class="btn-m" rel="modal:open">
                     <img src="../assets/wordguess-cli.png" id="proj-img" alt="Text Overlay Generator"><br>
@@ -757,6 +765,53 @@
     closeExisting: false
   });
 
+  filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn-f");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 //   var pupper = $('#lakota');
 //   var overlay = $('#overlay');
 
