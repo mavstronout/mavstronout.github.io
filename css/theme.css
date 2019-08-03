@@ -7,7 +7,7 @@
     display: inline-block;
     font-size: 16px;
     font-family: 'Teko', sans-serif;
-    width: 95%;
+    width: 90%;
     white-space: initial;
     margin: auto;
     background: rgb(70, 104, 140);
@@ -100,22 +100,17 @@
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   }
-/* 
+
 .modal {
-    pointer-events: none;
-    opacity: 0;
+    background-color: dimgrey;
+    width: 95%;
     transition: opacity 0.3s;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    right: 0;
-    max-width: 300px;
     margin: 0 auto;
-    padding: 30px;
-    background: #fff;
     border-radius: 4px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  } */
+  }
+
+
   .modal-close-btn {
     position: absolute;
     right: 10px;
